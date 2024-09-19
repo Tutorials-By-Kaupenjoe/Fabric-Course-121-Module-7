@@ -38,7 +38,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.FLUORITE_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.FLUORITE_TRAPDOOR);
 
-        blockStateModelGenerator.registerNorthDefaultHorizontalRotated(ModBlocks.CRYSTALLIZER, TexturedModel.ORIENTABLE);
+        blockStateModelGenerator.registerCooker(ModBlocks.CRYSTALLIZER, TexturedModel.ORIENTABLE);
     }
 
     @Override

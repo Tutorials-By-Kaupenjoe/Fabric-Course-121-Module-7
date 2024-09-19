@@ -1,6 +1,7 @@
 package net.kaupenjoe.mccourse.block.entity.custom;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.kaupenjoe.mccourse.block.custom.CrystallizerBlock;
 import net.kaupenjoe.mccourse.block.entity.ImplementedInventory;
 import net.kaupenjoe.mccourse.block.entity.ModBlockEntities;
 import net.kaupenjoe.mccourse.item.ModItems;
@@ -105,6 +106,7 @@ public class CrystallizerBlockEntity extends BlockEntity implements ExtendedScre
     public void tick(World world, BlockPos pos, BlockState state) {
         if(hasRecipe() && canInsertIntoOutputSlot()) {
             increaseCraftingProgress();
+            world.setBlockState(pos, state.with(CrystallizerBlock.LIT, true));
             markDirty(world, pos, state);
 
             if(hasCraftingFinished()) {
@@ -112,6 +114,7 @@ public class CrystallizerBlockEntity extends BlockEntity implements ExtendedScre
                 resetProgress();
             }
         } else {
+            world.setBlockState(pos, state.with(CrystallizerBlock.LIT, false));
             resetProgress();
         }
     }
