@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-19T14:35:30.6517537	MC Course Mod/Model Definitions
+// 1.21.1	2024-09-19T17:00:43.9673075	MC Course Mod/Model Definitions
 234f4f7af9f64a8fcfbd1c0ce1ffeee558f54070 assets\mccourse\models\block\fluorite_door_top_right_open.json
 8c5a5da60c5725149d37fdd89d877506a9275b05 assets\mccourse\models\block\fluorite_wall_side.json
 2b329c5ab799a97ab9b72d5998c67c9443430dd4 assets\mccourse\models\block\fluorite_block.json
@@ -58,12 +58,12 @@ d6c1b58b1147ffe8efe1bb3d67bc6872170f4682 assets\mccourse\models\block\fluorite_d
 082c8481cfb145454117ff145fbdf90c25e0973b assets\mccourse\blockstates\fluorite_trapdoor.json
 1c86b3ae324e2b38a13ec0792def9fce389b23a6 assets\mccourse\models\item\raw_fluorite.json
 2e733bdf4b43492d575670609456874dc6f97f75 assets\mccourse\models\item\starlight_ashes.json
-a394d3502d50e571e0acfe2db709f27c421c2424 assets\mccourse\blockstates\fluorite_wall.json
 2fce96086e9f5cf192ff814534fccf1c771b0406 assets\mccourse\models\block\fluorite_door_bottom_left.json
-2e9699b45fed13fb117aa1456768dc5103bd754c assets\mccourse\models\block\crystallizer.json
+a394d3502d50e571e0acfe2db709f27c421c2424 assets\mccourse\blockstates\fluorite_wall.json
+d251b212acfafa8570ca920983867fdec353ab11 assets\mccourse\models\block\crystallizer.json
 3f4c691525311c8cb54c14e4fb9676a449183eb1 assets\mccourse\blockstates\fluorite_block.json
-e14bd3b6409c70e48f5a4099ca46f9b4ce1b8c0d assets\mccourse\models\item\fluorite_fence_gate.json
 e6fc48f58bef61ebac04a2e34156ad2d475179fc assets\mccourse\models\item\fluorite_block.json
+e14bd3b6409c70e48f5a4099ca46f9b4ce1b8c0d assets\mccourse\models\item\fluorite_fence_gate.json
 fb2864f902591619465af0b7095f8f2161f9a3dc assets\mccourse\blockstates\fluorite_end_ore.json
 40dfd1479b3651d9d1cd92ac08b4854c3c596f29 assets\mccourse\models\item\fluorite_fence.json
 8db63a25fec1be3496058ee35258fc2bb443a195 assets\mccourse\blockstates\fluorite_button.json
@@ -71,7 +71,7 @@ fb2864f902591619465af0b7095f8f2161f9a3dc assets\mccourse\blockstates\fluorite_en
 7c97822324151c00344bb3016998dd28fcaffdb2 assets\mccourse\blockstates\fluorite_fence.json
 4d6afdec82b55dffbe279fccc85e5dba189f49c3 assets\mccourse\models\block\fluorite_trapdoor_open.json
 3b812240e7fbd62ed54f2834249da83604205329 assets\mccourse\models\block\fluorite_button_pressed.json
-c518adb85482236ac1d98fdbc1091fa2fcf586bb assets\mccourse\blockstates\crystallizer.json
+ce8b89d73a1830da6c4017885f8cb6536b5ec8ac assets\mccourse\blockstates\crystallizer.json
 4cb884f732da5e08c21211f771318b34440b09c6 assets\mccourse\models\block\fluorite_door_top_left_open.json
 921cae638e8e02cbff18ba1da1d9aec836513184 assets\mccourse\models\block\fluorite_wall_inventory.json
 e3bea00dd7e933deb59eaf492b010a1f8fdd914f assets\mccourse\models\block\magic_block.json
