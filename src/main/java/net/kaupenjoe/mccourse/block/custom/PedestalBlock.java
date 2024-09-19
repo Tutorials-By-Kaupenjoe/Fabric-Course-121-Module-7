@@ -69,11 +69,19 @@ public class PedestalBlock extends BlockWithEntity implements BlockEntityProvide
                 pedestalBlockEntity.setStack(0, stack);
                 world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 2f);
                 stack.decrement(1);
-            } else if(stack.isEmpty()) {
+
+                pedestalBlockEntity.markDirty();
+                world.updateListeners(pos, state, state, 0);
+            } else if(stack.isEmpty() && !player.isSneaking()) {
                 ItemStack stackOnPedestal = pedestalBlockEntity.getStack(0);
                 player.setStackInHand(Hand.MAIN_HAND, stackOnPedestal);
                 world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
                 pedestalBlockEntity.clear();
+
+                pedestalBlockEntity.markDirty();
+                world.updateListeners(pos, state, state, 0);
+            } else if(player.isSneaking() && !world.isClient()) {
+                player.openHandledScreen(pedestalBlockEntity);
             }
         }
 
