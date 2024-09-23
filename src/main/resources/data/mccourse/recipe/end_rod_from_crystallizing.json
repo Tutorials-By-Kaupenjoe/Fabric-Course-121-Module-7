@@ -1,0 +1,9 @@
+{
+  "type": "mccourse:crystallizing",
+  "ingredient": {
+    "item": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:end_rod"
+  }
+}
