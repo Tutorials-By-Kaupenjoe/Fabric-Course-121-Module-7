@@ -27,6 +27,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -69,6 +70,72 @@ public class CrystallizerBlockEntity extends BlockEntity implements ExtendedScre
             public int size() {
                 return 2;
             }
+        };
+    }
+
+    @Override
+    public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
+        Direction localDir = this.getWorld().getBlockState(pos).get(CrystallizerBlock.FACING);
+
+        if(side == null) {
+            return false;
+        }
+
+        if(side == Direction.DOWN) {
+            return false;
+        }
+
+        if(side == Direction.UP) {
+            return slot == INPUT_SLOT;
+        }
+
+        return switch (localDir) {
+            default -> //NORTH
+                    side == Direction.NORTH && slot == INPUT_SLOT ||
+                            side == Direction.EAST && slot == INPUT_SLOT ||
+                            side == Direction.WEST && slot == INPUT_SLOT;
+            case EAST ->
+                    side.rotateYCounterclockwise() == Direction.NORTH && slot == INPUT_SLOT ||
+                            side.rotateYCounterclockwise() == Direction.EAST && slot == INPUT_SLOT ||
+                            side.rotateYCounterclockwise() == Direction.WEST && slot == INPUT_SLOT;
+            case SOUTH ->
+                    side.getOpposite() == Direction.NORTH && slot == INPUT_SLOT ||
+                            side.getOpposite()  == Direction.EAST && slot == INPUT_SLOT ||
+                            side.getOpposite()  == Direction.WEST && slot == INPUT_SLOT;
+            case WEST ->
+                    side.rotateYClockwise() == Direction.NORTH && slot == INPUT_SLOT ||
+                            side.rotateYClockwise() == Direction.EAST && slot == INPUT_SLOT ||
+                            side.rotateYClockwise() == Direction.WEST && slot == INPUT_SLOT;
+        };
+    }
+
+    @Override
+    public boolean canExtract(int slot, ItemStack stack, Direction side) {
+        Direction localDir = this.getWorld().getBlockState(this.pos).get(CrystallizerBlock.FACING);
+
+        if(side == Direction.UP) {
+            return false;
+        }
+
+        // Down extract
+        if(side == Direction.DOWN) {
+            return slot == OUTPUT_SLOT;
+        }
+
+        // backside extract
+        // right extract
+        return switch (localDir) {
+            default ->  side == Direction.SOUTH && slot == OUTPUT_SLOT ||
+                    side == Direction.EAST && slot == OUTPUT_SLOT;
+
+            case EAST -> side.rotateYCounterclockwise() == Direction.SOUTH && slot == OUTPUT_SLOT ||
+                    side.rotateYCounterclockwise() == Direction.EAST && slot == OUTPUT_SLOT;
+
+            case SOUTH ->  side.getOpposite() == Direction.SOUTH && slot == OUTPUT_SLOT ||
+                    side.getOpposite() == Direction.EAST && slot == OUTPUT_SLOT;
+
+            case WEST -> side.rotateYClockwise() == Direction.SOUTH && slot == OUTPUT_SLOT ||
+                    side.rotateYClockwise() == Direction.EAST && slot == OUTPUT_SLOT;
         };
     }
 
