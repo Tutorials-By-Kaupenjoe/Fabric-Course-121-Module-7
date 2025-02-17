@@ -29,6 +29,7 @@
 
   "block.mccourse.pedestal": "Pedestal",
   "block.mccourse.crystallizer": "Crystallizer",
+  "block.mccourse.coal_generator": "Coal Generator",
 
   "itemgroup.fluorite": "Fluorite Items",
   "itemgroup.fluorite_blocks": "Fluorite Blocks",

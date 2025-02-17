@@ -39,6 +39,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.FLUORITE_TRAPDOOR);
 
         blockStateModelGenerator.registerCooker(ModBlocks.CRYSTALLIZER, TexturedModel.ORIENTABLE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COAL_GENERATOR);
     }
 
     @Override

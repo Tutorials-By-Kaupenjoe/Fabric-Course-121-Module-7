@@ -1,6 +1,7 @@
 package net.kaupenjoe.mccourse.block;
 
 import net.kaupenjoe.mccourse.MCCourseMod;
+import net.kaupenjoe.mccourse.block.custom.CoalGeneratorBlock;
 import net.kaupenjoe.mccourse.block.custom.CrystallizerBlock;
 import net.kaupenjoe.mccourse.block.custom.MagicBlock;
 import net.kaupenjoe.mccourse.block.custom.PedestalBlock;
@@ -63,6 +64,9 @@ public class ModBlocks {
 
     public static final Block CRYSTALLIZER = registerBlock("crystallizer",
             new CrystallizerBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block COAL_GENERATOR = registerBlock("coal_generator",
+            new CoalGeneratorBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
