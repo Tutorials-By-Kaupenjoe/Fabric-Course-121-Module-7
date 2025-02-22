@@ -5,6 +5,7 @@ import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.block.entity.custom.CoalGeneratorBlockEntity;
 import net.kaupenjoe.mccourse.block.entity.custom.CrystallizerBlockEntity;
 import net.kaupenjoe.mccourse.block.entity.custom.PedestalBlockEntity;
+import net.kaupenjoe.mccourse.block.entity.custom.TankBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -23,6 +24,10 @@ public class ModBlockEntities {
     public static final BlockEntityType<CoalGeneratorBlockEntity> COAL_GENERATOR_BE =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MCCourseMod.MOD_ID, "coal_generator_be"),
                     BlockEntityType.Builder.create(CoalGeneratorBlockEntity::new, ModBlocks.COAL_GENERATOR).build(null));
+
+    public static final BlockEntityType<TankBlockEntity> TANK_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MCCourseMod.MOD_ID, "tank_be"),
+                    BlockEntityType.Builder.create(TankBlockEntity::new, ModBlocks.TANK).build(null));
 
     public static void registerBlockEntities() {
         MCCourseMod.LOGGER.info("Registering Block Entities for " + MCCourseMod.MOD_ID);

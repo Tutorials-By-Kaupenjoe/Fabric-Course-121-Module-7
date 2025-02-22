@@ -54,6 +54,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PEDESTAL);
                         entries.add(ModBlocks.CRYSTALLIZER);
 
+                        entries.add(ModBlocks.COAL_GENERATOR);
+                        entries.add(ModBlocks.TANK);
+
                     }).build());
 
     public static void registerItemGroups() {

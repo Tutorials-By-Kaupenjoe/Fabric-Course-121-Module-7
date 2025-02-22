@@ -1,6 +1,7 @@
-// 1.21.1	2025-02-17T14:38:23.4804675	MC Course Mod/Model Definitions
+// 1.21.1	2025-02-22T19:36:34.5582205	MC Course Mod/Model Definitions
 234f4f7af9f64a8fcfbd1c0ce1ffeee558f54070 assets\mccourse\models\block\fluorite_door_top_right_open.json
 8c5a5da60c5725149d37fdd89d877506a9275b05 assets\mccourse\models\block\fluorite_wall_side.json
+5479cdc9f96ba5a1104a550fbfe01edc34272c2c assets\mccourse\blockstates\tank.json
 2b329c5ab799a97ab9b72d5998c67c9443430dd4 assets\mccourse\models\block\fluorite_block.json
 abe15c7d33d7a8c377b79ff8a57d04d1023779be assets\mccourse\models\block\fluorite_nether_ore.json
 0ffa82912cbed12b33f221270ac40b3f419721c2 assets\mccourse\models\block\fluorite_slab.json
@@ -23,6 +24,7 @@ b7d666bc87397258200dc27a96395ba532b6a945 assets\mccourse\models\block\fluorite_d
 d437bcc7c62a42eb1baa4e6a0d30c09c25453e3b assets\mccourse\models\item\fluorite_wall.json
 788703d1170a9f522aa937bcad4d222fdf303c80 assets\mccourse\models\block\fluorite_fence_post.json
 faea40b98cbb7269c546a7d3e42c40858c74ad52 assets\mccourse\models\block\fluorite_door_top_left.json
+4a2993c89d77cfe4903a014df3580f37260bd468 assets\mccourse\models\block\tank.json
 3b1e0c64989a11b48459ff3f45a04a3077ea9f28 assets\mccourse\models\block\fluorite_pressure_plate_down.json
 f1576a0d92bd6dddcefa45c5b355fa6c609f1c51 assets\mccourse\models\block\fluorite_button_inventory.json
 732e518299cc3eeefc68548c86dae07eb7d72956 assets\mccourse\models\block\fluorite_button.json
@@ -49,6 +51,7 @@ f2aeca2040ea829b8b6878ebe3a168fcb74381d2 assets\mccourse\models\item\chainsaw.js
 debe6f6bcb914efab78c5104e81a96d3143111b0 assets\mccourse\blockstates\fluorite_door.json
 1d58989995b5ab20033b1be69f48019708826037 assets\mccourse\models\item\fluorite_slab.json
 e669820a0ae72ec6fa3afc28fb183ff147f63b92 assets\mccourse\models\block\fluorite_door_bottom_right.json
+c25d77e9e2caa3955907cdc6f66a83a03c47b2cc assets\mccourse\models\item\tank.json
 bdf92f7f7409d2b74257b9b0d0491c7d81c3bd05 assets\mccourse\models\item\fluorite_nether_ore.json
 d6c1b58b1147ffe8efe1bb3d67bc6872170f4682 assets\mccourse\models\block\fluorite_door_bottom_right_open.json
 508ad7bde446600929812cb541b7512fc025c06b assets\mccourse\models\item\fluorite_ore.json

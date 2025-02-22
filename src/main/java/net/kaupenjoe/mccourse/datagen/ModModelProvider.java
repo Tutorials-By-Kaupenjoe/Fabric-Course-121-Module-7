@@ -41,6 +41,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCooker(ModBlocks.CRYSTALLIZER, TexturedModel.ORIENTABLE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COAL_GENERATOR);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TANK);
     }
 
     @Override
